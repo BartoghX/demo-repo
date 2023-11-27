@@ -1,13 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo File</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Crash Course for Absolute Beginners</title>
   </head>
   <body>
     <div>
-      <h1>Hejsa, min ven.</h1>
+      <header>
+        <h1>HTML Cheat Sheet</h1>
+        <a href="blog.html" target="_parent">My Blog</a>
+      </header>
+      <main>
+        <section>
+          <!-- Theses are the headings tags -->
+          <ul>
+            <li>
+              <h1>Heading 1</h1>
+            </li>
+            <li>
+              <h2>Heading 2</h2>
+            </li>
+            <li>
+              <h3>Heading 3</h3>
+            </li>
+            <li>
+              <h4>Heading 4</h4>
+            </li>
+            <li>
+              <h5>Heading 5</h5>
+            </li>
+            <li>
+              <h6>Heading 6</h6>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <!-- Here we show the paragraph -->
+          <p>
+            <!--
+            In this paragraph we have a tag named <strong>
+            witch makes the surrounded text bold
+          -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <strong
+              >Ipsa illo nam nobis modi assumenda nemo quaerat non omnis dolorum
+              quibusdam eos ex tenetur ullam praesentium laborum</strong
+            >, vero quos, autem in dolores est enim? Sequi aperiam doloribus
+            laboriosam molestias minima eius provident aliquid quibusdam quo
+            maiores.
+          </p>
+          <p>
+            <!--
+            In this paragraph we have a tag named <em>
+            which makes the surrounded text italic
+          -->
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <em
+              >Ipsa illo nam nobis modi assumenda nemo quaerat non omnis dolorum
+              quibusdam eos ex tenetur ullam praesentium laborum</em
+            >, vero quos, autem in dolores est enim? Sequi aperiam doloribus
+            laboriosam molestias minima eius provident aliquid quibusdam quo
+            maiores.
+          </p>
+          <p>
+            <!--
+            In this paragraph we have the tag that make us a link 
+            which is the <a href="">
+          -->
+            <a href="https://lipsum.com" target="_blank">Lorem ipsum dolor</a>
+            sit amet consectetur adipisicing elit. Ipsa illo nam nobis modi
+            assumenda nemo quaerat non omnis dolorum quibusdam eos ex tenetur
+            ullam praesentium laborum, vero quos, autem in dolores est enim?
+            Sequi aperiam doloribus laboriosam molestias minima eius provident
+            aliquid quibusdam quo maiores.
+          </p>
+        </section>
+        <aside>
+          <!--
+          Here we make some lists, both ordered and unordered lists
+        -->
+          <ul>
+            <!-- This is an unordered list -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+          </ul>
+
+          <ol>
+            <!-- This is an ordered list -->
+            <li>List Item 1</li>
+            <li>List Item 2</li>
+            <li>List Item 3</li>
+          </ol>
+        </aside>
+        <section>
+          <!-- 
+          This is where we make some table,
+          this is NOT FOR LAYOUT only for data.
+        -->
+
+          <table>
+            <thead>
+              <tr>
+                <th>Name:</th>
+                <th>Email:</th>
+                <th>Age:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Brad Traversy</td>
+                <td>brad@something.com</td>
+                <td>35</td>
+              </tr>
+              <tr>
+                <td>John Doe</td>
+                <td>jdoe@something.com</td>
+                <td>45</td>
+              </tr>
+              <tr>
+                <td>Sara Williams</td>
+                <td>sara@something.com</td>
+                <td>35</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <br />
+        <hr />
+        <br />
+        <section>
+          <!--
+          Forms
+        -->
+          <form action="process.php" method="post">
+            <div>
+              <label for="">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                placeholder="Enter first name here"
+              />
+            </div>
+            <br />
+            <div>
+              <label for="">Last Name</label>
+              <input type="text" name="lastName" />
+            </div>
+            <br />
+            <div>
+              <label for="">Email</label>
+              <input type="email" name="email" />
+            </div>
+            <br />
+            <div>
+              <label for="">Message</label>
+              <textarea name="message" id="" cols="30" rows="10"></textarea>
+            </div>
+            <br />
+            <div>
+              <label for="">Gender</label>
+              <select name="gender" id="">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <br />
+            <div>
+              <label for="">Age:</label>
+              <input type="number" name="age" value="30" />
+            </div>
+            <br />
+            <div>
+              <label for="">Birthday:</label>
+              <input type="date" name="birthday" />
+            </div>
+            <br />
+            <input type="submit" name="submit" value="Submit" />
+          </form>
+          <br />
+          <!-- Show a button -->
+          <button>Click here</button>
+        </section>
+        <br />
+        <section>
+          <!-- Images -->
+          <a href="images/bird.jpg" target="_blank">
+            <img src="images/bird.jpg" alt="A nice bird" width="400" />
+          </a>
+        </section>
+        <br />
+        <section>
+          <!-- Quotations -->
+          <blockquote cite="https://traversymedia.com">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            obcaecati tenetur nam esse unde eligendi voluptatem maxime quia
+            consectetur! Fuga deserunt facere consectetur quia vero voluptate
+            exercitationem qui. Eius explicabo assumenda error quos consectetur
+            doloremque non incidunt quam voluptate delectus blanditiis id,
+            commodi quis? Laborum fuga officiis ipsam perferendis autem
+            repellendus expedita, sit nostrum similique distinctio consequuntur
+            dolorem sequi sapiente. Ea, commodi iusto! Repellendus voluptate
+            provident perferendis neque quas quo enim quibusdam porro
+            dignissimos totam.
+          </blockquote>
+        </section>
+      </main>
+      <footer>
+        <!-- Abbriviation -->
+        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome!</p>
+
+        <!-- Citation -->
+        <p><cite>HTML Crash Course</cite> by Brad Traversy</p>
+      </footer>
     </div>
+    <div style="margin-top: 500px"></div>
   </body>
 </html>
